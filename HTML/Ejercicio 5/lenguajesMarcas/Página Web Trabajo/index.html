@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro | Diseñador Web</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2d3436;
+            --secondary: #0984e3;
+            --text: #2d3436;
+            --background: #ffffff;
+            --accent: #74b9ff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--background);
+        }
+
+        .header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .header h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .header h2 {
+            font-size: 2rem;
+            font-weight: 300;
+            margin-bottom: 2rem;
+        }
+
+        .nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(45, 52, 54, 0.95);
+            padding: 1rem 0;
+            z-index: 1000;
+            transform: translateY(-100%);
+            transition: transform 0.3s ease;
+        }
+
+        .nav.visible {
+            transform: translateY(0);
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        section {
+            padding: 6rem 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .about {
+            background-color: var(--background);
+        }
+
+        .services {
+            background-color: #f5f6fa;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 1rem;
+        }
+
+        .contact {
+            background-color: var(--background);
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .form-group textarea {
+            height: 150px;
+            resize: vertical;
+        }
+
+        button {
+            background-color: var(--secondary);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0873c4;
+        }
+
+        .footer {
+            background-color: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .social-links {
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: var(--accent);
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 3rem;
+            }
+
+            .header h2 {
+                font-size: 1.5rem;
+            }
+
+            section {
+                padding: 4rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre Mí</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <header id="inicio" class="header">
+        <h1 data-aos="fade-up">Pedro</h1>
+        <h2 data-aos="fade-up" data-aos-delay="200">Diseñador Web Creativo</h2>
+        <img src="logopedro.jpg" alt="Logo de Pedro" data-aos="zoom-in" data-aos-delay="400" style="height: 200px; width: 200px;">
+    </header>
+
+    <section id="sobre-mi" class="about">
+        <div class="container" data-aos="fade-up">
+            <h2>Sobre Mí</h2>
+            <p>Soy un diseñador web apasionado por crear experiencias digitales únicas y memorables. Con más de 5 años de experiencia en el sector, me especializo en diseño web moderno y desarrollo frontend.</p>
+            <img src="description-image.jpg" alt="Espacio de trabajo de Pedro" data-aos="fade-up" style="height: 400px; width: 800px; position: relative; margin-top: 30px;">
+        </div>
+    </section>
+
+    <section id="servicios" class="services">
+        <div class="container">
+            <h2 data-aos="fade-up">Servicios</h2>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up">
+                    <img src="header-image.jpg" alt="Icono de diseño web" class="service-icon">
+                    <h3>Diseño Web</h3>
+                    <p>Creación de sitios web modernos, responsive y optimizados para todos los dispositivos.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="services-image.jpg" alt="Icono de desarrollo frontend" class="service-icon">
+                    <h3>Desarrollo Frontend</h3>
+                    <p>Implementación de interfaces de usuario dinámicas y atractivas usando las últimas tecnologías.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <img src="contact-image.jpg" alt="Icono de SEO" class="service-icon">
+                    <h3>SEO</h3>
+                    <p>Optimización para motores de búsqueda para mejorar la visibilidad de tu sitio web.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contact" style="background-color: #2d3436;">
+        <div class="container">
+            <h2 data-aos="fade-up">Contacto</h2>
+            <form class="contact-form" data-aos="fade-up">
+                <div class="form-group">
+                    <label for="nombre" style="color: white;">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" style="color: white;">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje" style="color: white;">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+                </div>
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Pedro - Diseñador Web. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                <a href="#" aria-label="GitHub">GitHub</a>
+                <a href="#" aria-label="Twitter">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Inicializar AOS (Animate On Scroll)
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Mostrar/ocultar navegación al hacer scroll
+        let lastScroll = 0;
+        const nav = document.querySelector('.nav');
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+
+            if (currentScroll > lastScroll && currentScroll > 200) {
+                nav.classList.remove('visible');
+            } else {
+                nav.classList.add('visible');
+            }
+
+            lastScroll = currentScroll;
+        });
+    </script>
+</body>
+</html>
