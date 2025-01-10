@@ -1,0 +1,20 @@
+#Primero{
+    width: 50%;
+    height: 400px;
+    background-color: yellow;
+}
+#Segundo{
+    width: 50%;
+    height: 200px;
+    background-color: pink;
+}
+#Tercero{
+    width: 50%;
+    height: 100px;
+    background-color: aqua;
+}
+#Cuarto{
+    width: 50%;
+    height: 50px;
+    background-color: brown;
+}

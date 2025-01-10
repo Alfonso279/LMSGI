@@ -1,0 +1,57 @@
+#Cabezera{
+    width: 100%;
+    background-color: orange;
+    float: left;
+    margin: 0;
+}
+img{
+    width: 180px;
+    height: 140px;
+    float: right;
+    border: solid white 3px;
+    margin: 10px;
+    margin-top: -50px;
+}
+div, h1{
+    margin: 15px;
+    width: 300px;
+    border: solid white 3px;
+}
+#Cuerpo{
+    background-color: violet;
+    float: left;
+    width: 70%;
+    margin-left: -2.9px;
+    margin-left: 10px;
+    padding-bottom: 200px;
+    margin: 0;
+}
+#Derecha{
+    margin: 0;
+    float: right;
+    width: 25%;
+    background-color: cadetblue;
+    padding-bottom: 22px;
+}
+footer{
+    text-align: center;
+    clear: both;
+    background-color: grey;
+    clear: both;
+    padding: 10px;
+    margin: 0%;
+}
+body{
+    background-color: black;
+    margin: 0;
+}
+.Justificado{
+    text-align: justify;
+    margin: 10px;
+}
+#cuerpo{
+    background-color: white;
+    margin: auto;
+    width: 70%;
+}
+

@@ -1,0 +1,30 @@
+#Contenedor {
+    margin: auto;
+    background-color: black;
+    height: 700px;
+    width: 100%;
+    margin: auto;
+}
+#Cabezera {
+   width: 100%;
+   height: 100px;
+   background-color: aqua; 
+}
+#Derecha {
+    width: 10%;
+    height: 600px;
+    background-color: red;
+    float: right;
+}
+#Izquierda {
+    width: 30%;
+    height: 600px;
+    background-color: darkcyan;
+    float: left;
+}
+#Footer{
+    width: 100%;
+    height: 100px;
+    background-color: yellow;
+    clear: both;
+}
